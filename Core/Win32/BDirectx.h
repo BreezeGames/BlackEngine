@@ -1,10 +1,10 @@
 /*!
-*	/file
-*	/brief   Средства DirectX3D
+*	\file
+*	\brief   Средства DirectX3D
 *
-*	/author  Георгий Попов <popoff96@live.com>
-*	/date	 27.11.2015
-*	/version 0.1
+*	\authors  Георгий Попов <popoff96@live.com>
+*	\date	 27.11.2015
+*	\version 0.1
 *
 *	Включает необходимы компоненты графического интерфейса DirectX
 */

@@ -1,11 +1,11 @@
 /*!
-*	/file
-*	/brief  Заголовки ОС Windows
+*	\file
+*	\brief  Заголовки ОС Windows
 *
-*	/author  Георгий Попов <popoff96@live.com>
-*	/date	 27.11.2015
-*	/version 0.1
-*	/todo    Добавить некоторые другие графические интерфейсы (OpenGL...)
+*	\authors  Георгий Попов <popoff96@live.com>
+*	\date	 27.11.2015
+*	\version 0.1
+*	\todo    Добавить некоторые другие графические интерфейсы (OpenGL...)
 *
 *	Включает компоненты операционной системы Windows
 */
