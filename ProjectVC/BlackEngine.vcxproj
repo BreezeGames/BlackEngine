@@ -18,6 +18,14 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Core\Win32\BDirectx.h" />
+    <ClInclude Include="..\Core\Win32\BPlatform.h" />
+    <ClInclude Include="..\Core\Win32\BWindows.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Core\Win32\BL_main.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{D46267BF-97C9-4442-9059-8C42FDDE7745}</ProjectGuid>
     <RootNamespace>BlackEngine</RootNamespace>
@@ -68,7 +76,11 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;C:\Users\Георгий\Documents\Visual Studio 2015\Projects\BlackEngine\BlackEngine\Core\Win32;$(IncludePath)</IncludePath>
+    <SourcePath>C:\Users\Георгий\Documents\Visual Studio 2015\Projects\BlackEngine\BlackEngine\Core\Win32;$(SourcePath)</SourcePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -117,9 +129,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="BL_main.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
