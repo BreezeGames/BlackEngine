@@ -13,7 +13,7 @@
 #ifndef _BL_WINDOWS_
 #define _BL_WINDOWS_
 
-#define _BL_WINDOWS_DIRECTX_
+#define _BL_WINDOWS_DIRECTX_	//Используемые средства графики (directX)
 
 #ifdef _BL_WINDOWS_DIRECTX_
 #include "BDirectx.h"
