@@ -19,12 +19,17 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\Core\Win32\BApplication.h" />
     <ClInclude Include="..\Core\Win32\BDirectx.h" />
     <ClInclude Include="..\Core\Win32\BPlatform.h" />
+    <ClInclude Include="..\Core\Win32\BPoint2D.h" />
+    <ClInclude Include="..\Core\Win32\BType.h" />
+    <ClInclude Include="..\Core\Win32\BWindow.h" />
     <ClInclude Include="..\Core\Win32\BWindows.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Core\Win32\BL_main.cpp" />
+    <ClCompile Include="..\Core\Win32\BWindow.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{D46267BF-97C9-4442-9059-8C42FDDE7745}</ProjectGuid>
