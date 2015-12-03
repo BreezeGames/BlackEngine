@@ -13,6 +13,9 @@
 #ifndef _BL_APPLICATION_
 #define _BL_APPLICATION_
 
+#include "BPlatform.h"	//Подключаем средства выбранной платформы
+#include "BWindow.h"
+
 /*!
 *	\brief	 Главный класс приложения
 *	\authors  Георгий Попов <popoff96@live.com>
@@ -25,10 +28,12 @@
 class BApplication
 {
 public:
+	///Конструктор по умолчанию
 	BApplication();
+	///Деструктор приложения
 	~BApplication();
 
 private:
-
+	BWindow _window;
 };
 #endif
